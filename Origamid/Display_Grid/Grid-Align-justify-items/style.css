@@ -10,20 +10,6 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-section {
-  margin: 0 auto;
-  padding: 10px;
-  background: gold;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  background: #6647ee;
-  border-radius: 15px;
-  margin-top: 10px;
-}
 .iten {
   background: #161b22;
   border-radius: 10px;
@@ -37,20 +23,27 @@ a {
 
 img {
   max-width: 100%;
-  margin-bottom: 20px;
   border-radius: 10px;
 }
 
 /* Grid */
+section {
+  margin: 0 auto;
+  padding: 10px;
+  background: gold;
+}
 
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  /* justify-items: center; */
+  /* place-items: center; */
 }
 
 .foto {
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
   /* grid-column: 1 / 3; */
   /* O grid-column serve para o iten que ocupava apenas uma 1 linha na vestical,
   (coluna), possa ocupar ocupar o tanto de linhas que definiros, nesse caso, 
@@ -61,32 +54,53 @@ img {
   efeito demostrado nesse exemplo*/
 }
 
-.description {
+/* .description {
   grid-column: 1 / 3;
-}
+} */
 
 /* também temos o valor span, que vai espandir o nosso numero de colunas,
 aparti de onde nos colocou nosso elemento,  */
 
 h2 {
+  font-size: 48px;
   grid-column: 1 / 3;
   text-align: center;
+  background: #74747450;
+  padding: 10px;
+  border-radius: 5px;
+  grid-column: 2;
 }
 
 .iten .preço {
   color: gold;
   font-weight: 600;
-  margin-bottom: 5px;
   background: #74747450;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px 20px;
+  /* grid-column: span 2; */
 
-  grid-column: 1 / span 4;
   /* também temos o valor span, que vai espandir o nosso numero de colunas,
 aparti de onde nos colocou nosso elemento, ou podemos definir a linha que ele
 vai começar, nesse caso, ele irá começar a ocupar da linha 1, e vai espandir 
 até a linha 4  */
+
+  /* align-self: start;
+justify-self: end; */
+  place-self: start end;
+
+  /* place-self serve para alinha nossos iten em relão a nossa coluna, e pra falar
+diretamente com nosso iten, usamos a propriedade place-self: ;  */
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background: #6647ee;
+  border-radius: 15px;
+  /* text-align: center; */
+  /* grid-column: span 2; */
+
+  align-self: start;
+  text-align: center;
 }
