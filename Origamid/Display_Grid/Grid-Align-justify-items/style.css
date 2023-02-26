@@ -42,7 +42,7 @@ section {
   /* place-items: center; */
 }
 
-.foto {
+/* .foto {
   /* grid-column: 1 / -1; */
   /* grid-column: 1 / 3; */
   /* O grid-column serve para o iten que ocupava apenas uma 1 linha na vestical,
@@ -51,8 +51,10 @@ section {
   
   Outra forma de fazer a foto ocupar uma linha toda, caso eu não saiba o numnero
   de linhas que tem, posso colocar o valor grid-column: 1 / -1; que terá o mesmo 
-  efeito demostrado nesse exemplo*/
-}
+  efeito demostrado nesse exemplo
+} 
+*/
+
 
 /* .description {
   grid-column: 1 / 3;
