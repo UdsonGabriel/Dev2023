@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* Reset style sheets css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: #282a35;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  background: #181818;
+  width: 45rem;
+  height: 60rem;
+  margin: 10% auto;
+  border-radius: 5rem 0.5rem 5rem 0.5rem;
+  position: relative;
+}
+
+.background-img {
+  width: 45rem;
+  height: 60rem;
+  border-radius: 5rem 0.5rem 5rem 0.5rem;
+  background-image: url(https://img.freepik.com/free-photo/beautiful-african-girl-with-funny-hairstyle-watching-movie-cinema_7502-4609.jpg?w=740&t=st=1676500492~exp=1676501092~hmac=a6d130e301531b4ddc32745e0e3320d1c13a8d550ee4b5d00457ff3a682f083f);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  opacity: 0.8;
+}
+
+.low-opacy {
+  background: #181818;
+  border-radius: 5rem 0.5rem 5rem 0.5rem;
+  height: 60rem;
+  position: absolute;
+  top: 0;
+  width: 45rem;
+}
+
+.main {
+  z-index: 3;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.text-main {
+  background: rgba(0, 0, 0, 0.6);
+  width: 30rem;
+  height: 20rem;
+  margin: auto;
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.text-main p {
+  font-size: 1.9rem;
+}
+
+.p-edit {
+  padding: 2rem;
+}
+
+.links {
+  margin: 8rem;
+  display: flex;
+  width: 30rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.links a {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  width: 20rem;
+  height: 5rem;
+  background: rgb(24, 24, 24, 0.8);
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+.links a:hover {
+  background: rgba(177, 177, 177, 0.8);
+}
+
+/* Sp CSS */
+
+.film {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+  padding: 3rem;
+  width: auto;
+  background: rgb(24, 24, 24, 0.8);
+}
+
+.title-sp {
+  margin: 2rem auto;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 4rem;
+  background: #ffffff;
+  color: #000;
+  border-radius: 2rem;
+}
+
+svg:hover path {
+  fill: #696969;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background: #ffffff;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

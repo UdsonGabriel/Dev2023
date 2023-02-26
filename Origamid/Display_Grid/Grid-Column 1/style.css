@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d1117;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+}
+
+section {
+  margin: 0 auto;
+  /* width: 800px; */
+  padding: 10px;
+  background: gold;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns, serve para definirmos quantas colunas
+  vamos fazer. Existe varios valores que podemos aplicar no grid,
+  mas o recomendado é usar o valor "fr", sendo assim podemos da
+  prioridade para outras colunas, basta aplicar o "fr" na coluna que
+  desejamos. Ex: 1fr 2fr. nesse exemplo a coluna 2 terá uma ocupação
+  maior que a primeira.*/
+
+  place-content: center center;
+  height: 900px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background: #6647ee;
+  display: block;
+  width: 110px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.iten {
+  background: #161b22;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+}
+
+.iten h2 {
+  margin: 8px 0;
+}
+
+.iten .preço {
+  color: gold;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
