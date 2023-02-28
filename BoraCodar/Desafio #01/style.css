@@ -1,5 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  text-decoration: none;
+}
+
+header {
+  height: 53rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-ilustre1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.svg-ilustre2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h3 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #e45858;
+}
+
+header h1 span {
+  color: #6246ea;
+}
+
+header h1 {
+  font-size: 4.8rem;
+  width: 64.7rem;
+  text-align: center;
+  margin: 1.8rem 0 4rem;
+}
+
+.input-search {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.input-box1,
+.input-box2 {
+  width: 348px;
+  height: 48px;
+  background: #f4f4ff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 1.4rem;
+  gap: 1.2rem;
+}
+
+.input-search input {
+  border: 0 none;
+  background: none;
+  outline: none;
+}
+
+::placeholder {
+  background: #f4f4ff;
+  color: #7c7c8a;
+}
+
+.input-search a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button-search {
+  background: #6246ea;
+  padding: 1.4rem 3.2rem;
+  border-radius: 0.5rem;
 }
