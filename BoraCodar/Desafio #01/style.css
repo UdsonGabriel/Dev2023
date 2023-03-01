@@ -25,6 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f8f8ff;
 }
 
 .svg-ilustre1 {
@@ -43,6 +44,7 @@ header .content {
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 2;
 }
 
 header h3 {
@@ -67,6 +69,10 @@ header h1 {
   display: flex;
   gap: 2.4rem;
   align-items: center;
+  background: #fff;
+  padding: 4rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
 }
 
 .input-box1,
@@ -103,4 +109,124 @@ header h1 {
   background: #6246ea;
   padding: 1.4rem 3.2rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+}
+
+.button-search:hover {
+  box-shadow: 0px 0px 2px 0px #7458ff;
+  transition: 0.3s ease-in;
+  background: #7458ff;
+}
+
+/* content-cards */
+
+main {
+  max-width: 121.6rem;
+  margin: 11.3rem auto;
+}
+
+.div-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-title h2 {
+  color: #121214;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.button {
+  padding: 0.4rem 2.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+}
+
+.button-select {
+  gap: 0.5rem;
+  display: flex;
+  padding: 0.8rem;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.map-button {
+  background: none;
+  color: #6246ea;
+}
+
+.list-button {
+  background: #6246ea;
+  color: #fff;
+}
+
+.cards {
+  margin-top: 4rem;
+}
+
+.card {
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+  width: 38.4rem;
+  height: 32.3rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.info-card {
+  padding: 1.6rem;
+}
+
+.info-card h3 {
+  color: #121214;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 140%;
+  margin-bottom: 1.6rem;
+}
+
+.info-card p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: #000000bf;
+}
+
+.card-loc {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card-loc span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  max-width: 121.6rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #f4f4ff;
+  background: #a08cff;
+  padding: 0.5rem;
 }
