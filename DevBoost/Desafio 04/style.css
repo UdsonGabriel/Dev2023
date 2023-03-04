@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'inter', sans-serif;
+  color: #fff;
+  background-color: rgb(141, 8, 8);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    #040926 -6.13%,
+    rgba(153, 7, 204, 0.24) 124.8%
+  );
+  padding: 3.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11.2rem;
+}
+
+.text-cta {
+  text-align: center;
+}
+
+.text-cta h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 4.6rem;
+  color: #fff;
+  margin-bottom: 0.9rem;
+}
+
+.text-cta h3 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  margin-bottom: 1.4rem;
+}
+
+.text-cta a {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding: 1rem 3.2rem;
+  background: #69028f8f;
+  border-radius: 3.8rem;
+  margin-bottom: 7.7rem;
+  display: inline-block;
+}
+
+.text-cta a:hover {
+  box-shadow: 0 0 2px 0px #fff;
+}
+
+.img-hero {
+  display: flex;
+  justify-content: center;
+}
+
+.img-svg {
+  display: flex;
+  flex-direction: column;
+  width: 366.7px;
+  align-items: center;
+}
